@@ -1,0 +1,42 @@
+@import '../style.module.scss';
+
+.main {
+  @extend %baseContainer;
+
+  .header {
+    @extend %baseHeader;
+    font-size: 2vw;
+
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .cardsContainer {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .cardsVerticalContainer {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    overflow: auto;
+    margin: 1vh 0;
+    height: 80vh;
+    width: 18%;
+  }
+
+  .cardsContainerEvents {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80%;
+  }
+}

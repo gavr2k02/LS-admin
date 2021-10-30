@@ -1,0 +1,25 @@
+@import '../style.module.scss';
+
+.main {
+  @extend %baseContainer;
+  width: 80%;
+  background-color: #1a1a1a;
+  height: 80vh;
+
+  .header {
+    @extend %baseHeader;
+    font-size: 2vw;
+
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .cardsContainer {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
